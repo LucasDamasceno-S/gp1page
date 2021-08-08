@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+
+body, ul {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+abbr{
+    text-decoration: none;
+}
+main{
+    color: black;
+}
+
+hr{
+    width: 120px;
+    background-color: #2670E8;
+    height: 2px;
+    border: none;
+    margin-top: 35px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 1.4s;
+    background: rgba(17, 101, 226, 0.781);
+    transform: translateX(10px) scale(1.1);
+}
+
+/* HEADER */ /* HEADER */ /* HEADER */
+
+#header h1{
+    color: white;
+    font-weight: 600;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menuzin p, h1{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color:#2670E8;
+}
+
+#header {
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px black;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 1rem;
+    background: #2670E8;
+}
+
+#header img{
+    height: 55px;
+    color: #fff;
+}  
+
+#logo{
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+#btn-mobile {
+    display: none;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 50%;
+        top: 70px;
+        right: 0px;
+        background: #2670E8;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #fff;
+
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        display: block;
+        border-top: 2px solid #fff;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .4s;
+        position: relative;
+        color: #fff;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
+    /* HEADER */ /* HEADER */ /* HEADER */
+    /* FOOTER */ /* FOOTER */ /* FOOTER */
+
+    .rodape {
+        width: 100%;
+        float: left;
+        background-color: #2670E8;
+        padding: 20px 8%;
+    }
+
+    .rodape p {
+        color: white;
+        text-align: center;
+    }
+}
+
+.rodape {
+    margin: 100px 0 0;
+    width: 100%;
+    float: left;
+    background-color: #2670E8;
+    padding: 0px;
+    
+}
+
+.rodape p {
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER *//* FOOTER *//* FOOTER */
+/* NEWSLETTER */ /* NEWSLETTER *//* NEWSLETTER */
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2670E8;
+    padding: 30px 0;
+}
+.newsletter h3{
+    font-size: 2em;
+    margin: 0;
+    color: #FFF;
+}   
+.newsletter p{
+    max-width: 800px;
+    color: #fff;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.newsletter form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 80%;
+    align-items: center;
+}
+.newsletter input{
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+}
+.newsletter button{
+    background-color: #fff;
+    color: black;
+    padding: 15px;
+    text-transform: uppercase;
+    border:none;
+    border-radius: 5px;
+}
+@media(max-width: 850px){
+    .newsletter input{
+        flex-basis: 100%;
+    }
+    .newsletter button{
+    margin-top: 15px;
+    }
+    #inp1{
+        margin-bottom: 10px;
+    }
+}
+
+.newsletter button {
+    width: 100px;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* NEWSLETTER *//* NEWSLETTER *//* NEWSLETTER */
+/* MAIN *//* MAIN *//* MAIN */
+
+.principal {
+    background-color: #fff;
+    padding: 20px 0;
+    margin: 0 auto 20px;
+    max-width: 1000px;
+    box-shadow: 0 0 4px black;
+}
+
+.noticia {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.noticia h2{
+    display: block;
+    margin: 0 auto 20px;
+}
+.flexionar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+.flexionar img{
+    flex: 1 1;
+    max-width: 100%;
+    display: block;
+    margin: 0 0 10px;
+    border-radius: 10px
+}
+.flexionar p{
+    flex: 6 1;
+    text-align: justify;
+    margin: 0 0 0 5px;
+    text-indent: 20px;
+}
+.flexionar a{
+    background-color: none;
+    color: black;
+    font-weight: 600;
+}
+.flexionar a:hover{
+    font-size: 1.2em;
+    text-decoration: underline;
+    transition: none;
+    transform: none;
+    background: none;
+    color: #2670E8;
+}
+
+.noticia2{
+    text-align: center;
+}
+
+.noticia2 a{
+    background-color: none;
+    color: black;
+    font-weight: 600;
+}
+.noticia2 a:hover{
+    font-size: 1.2em;
+    text-decoration: underline;
+    transition: none;
+    transform: none;
+    background: none;
+    color: #2670E8;
+}
+
+@media(max-width: 850px){
+    .noticia2{
+        margin: 0 20px;
+    }
+    .noticia2 iframe{
+        width: 100%;
+    }
+}
+
+/* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN *//* MAIN */

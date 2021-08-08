@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/newsletter.ico" type="image/x-icon">
+    <title>Grupo 1 - Notícias</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header id="header">
+            <img src="img/newsletter.png" alt="Ícone da página" class="img1">
+            <div class="menuzin">
+                <h1>GP1</h1>
+            </div>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="/esportes.html">ESPORTES</a></li>
+                    <li><a href="/brasil.html">BRASIL</a></li>
+                    <li><a href="/mundo.html">MUNDO</a></li>
+                    <li><a href="#noticia">ESTUDOS</a></li>
+                </ul>   
+            </div>
+
+    </header>
+    
+    <main class="principal">
+        <article class="noticia" id="noticia">
+            <h2>Cursos gratuitos de programação</h2>
+            <div class=flexionar>
+                <img src="img/gg-500.png" alt="Professor Gustavo Guanabara">
+                <p>O professor Gustavo Guanabara tem disponibilizado no seu canal do YouTube, Curso em Vídeo, diversos cursos gratuitos relacionados a programação. Seja ensinando linguagens, história ou até mesmo lógica de programação. O que você está esperando? <abbr title="Link para o canal"><a href="https://www.youtube.com/user/cursosemvideo" target="_blank">Clique aqui</a></abbr> para ser redirecionado a página do canal dele</p>
+            </div>
+        </article>
+        <hr>
+        <article class="noticia2">
+            <h2>Acesse o curso de HTML e CSS</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejkb_YpuHWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h4>Quer assistir a esse curso em específico?</h4>
+            <abbr title="Link para a playlist de HTML e CSS"><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&ab_channel=CursoemV%C3%ADdeo" target="_blank">Clique Aqui</a></abbr>
+        </article>
+    </main>
+    
+    <section class="newsletter">
+        <h3> Newsletter </h3>
+        <p> Receba nossas noticias por email</p>
+        <form method="post">
+            <input type="text" placeholder="Seu nome" id="inp1">
+            <input type="text" placeholder="Seu email">
+            <button>
+                Cadastrar
+            </button>
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <p>© GP1 - Todos os direitos reservados</p>
+    </footer>
+    <script src="js/mobile.js"></script>
+   
+</body>
+
+</html>
